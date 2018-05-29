@@ -97,7 +97,7 @@ class App extends Component {
       this.getCurrMbrInfo(e.key);
       this.props.history.push('/');
     }
-  }
+  };
   // 隐藏加载等待
   showLayout = () => document.getElementsByClassName('pace')[0].style.opacity = 0;
 
@@ -153,10 +153,8 @@ class App extends Component {
                 }}><span>{item.Name}</span></Menu.Item>)
               }
               <Menu.Divider/>
-              <Menu.Item key="back" style={{background: '#404040', margin: 0}}><Icon
-                type="logout"/>返回</Menu.Item>
+              <Menu.Item key="back" style={{background: '#404040', margin: 0}}><Icon type="logout"/>返回</Menu.Item>
             </SubMenu>
-
           </Menu>
         </Header>
         <Layout>
